@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Syllabus to Skill Mapper</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <div class="card">
+        <h1> Smart Syllabus → Skill Mapper</h1>
+        <p class="subtitle">
+            Discover what skills your syllabus builds & what industry expects
+        </p>
+
+        <label>Syllabus Topics</label>
+        <textarea id="syllabus" placeholder="Eg: DBMS, Python, HTML, Statistics..."></textarea>
+
+        <label>Target Job Role</label>
+        <select id="job">
+            <option value="">-- Choose Job Role --</option>
+            <option value="software">Software Developer</option>
+            <option value="web">Web Developer</option>
+            <option value="frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="data">Data Analyst</option>
+            <option value="ml">Machine Learning Engineer</option>
+            <option value="cloud">Cloud Engineer</option>
+            <option value="security">Cyber Security Analyst</option>
+        </select>
+
+        <button onclick="checkSkills()">Analyze Skills 🚀</button>
+
+        <div id="result" class="result-box"></div>
+        <div id="roadmap" class="roadmap"></div>
+    </div>
+</div>
+
+<!-- JS LINK -->
+<script src="script.js"></script>
+</body>
+</html>
